@@ -1,0 +1,1 @@
+You will need to borrow an API key from Spotify's public API, and plug it into the MusicMaster2/src/App.js search function in order for the application to work.

@@ -1,0 +1,136 @@
+body {
+    background: black;
+    color: white;
+}
+
+.App {
+    text-align: center;
+}
+
+.App-title {
+    font-size: 30px;
+}
+
+.Search-Button {
+    background: red;
+    border-radius: 5px;
+    border: 1px solid red;
+    font-weight: bold;
+    font-size: 14px;
+    height: 10%;
+}
+
+.Input-Searchbar {
+    border-radius: 5px;
+    width: 50%;
+    color: black;
+}
+
+/* Profile */
+
+.profile {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-info {
+    display: flex;
+    margin-left:10px;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border: 3px solid red;
+    border-radius: 75px;
+    object-fit: cover;
+    margin-top:10px;
+}
+
+.profile-name {
+    font-size: 26px;
+
+}
+
+.profile-followers {
+    font-size: 18px;
+}
+
+.profile-genres {
+    font-size: 18px;
+}
+
+/* Gallery */
+
+.track {
+    display: inline-block;
+    width: 220px;
+    height: 220px;
+    border-radius: 3px;
+    margin: 10px;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+}
+
+.track-img {
+    border: 3px solid rgb(236, 8, 8);
+    width: 220px;
+    height: 220px;
+    border-radius: 3px;
+    object-fit: cover;
+    position: absolute;
+}
+
+.track-text {
+    background-color: black;
+    color: white;
+    opacity: 75%;
+    width:200px;
+    text-align: center;
+    position: absolute;
+    margin-left: 10px;
+    padding: 10px;
+    bottom: 0;
+}
+
+.track-play {
+    position: absolute;
+    height:220px;
+    width: 200px;
+}
+
+.track-play-inner {
+    position: absolute;
+    text-align:center;
+    font-size: 25px;
+    background-color: black;
+    border-radius: 30px;
+    width:60px;
+    height: 60px;
+    color: white;
+    padding-top: 13px;
+    margin-left: 80px;
+    margin-top: 80px;
+    opacity: 0%;
+
+}
+
+.track-play-inner:hover {
+    opacity: 80%;
+    animation-name: fade-in;
+    animation-duration: .5s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+
+    }
+    to {
+        opacity: .8;
+    }
+}
